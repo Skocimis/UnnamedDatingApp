@@ -1,0 +1,26 @@
+.basic_button {
+    background: #eeeeee;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 25px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    width: 70%;
+    color:black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .basic_button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+   }
+   
+   .basic_button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+   }

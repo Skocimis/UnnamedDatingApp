@@ -10,7 +10,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors({ origin: '*' }))
 
-const port = 80;
+const port = process.env.PORT || 80;
 
 let serveFrontend = function (_, res) {
     res.sendFile(path.join(__dirname, '/build/index.html'), function (err) {
